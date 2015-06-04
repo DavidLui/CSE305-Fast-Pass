@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,46 +67,37 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <jsp:include page="header.jsp" />
-           
+            
+            
+            
+            
+            
+            
+            
+            
             <div class="container-fluid">
-                <div class="row">
+                <div class="col">
                     <div class="col-lg-12">
-                        <h1>Welcome</h1>
+                        <h1>Manager Page</h1>
                         
+                        
+                   
+                        
+                        
+                        <div>
+                        <a href="#menu-toggle" class="btn btn-default" id="m1enu-toggle">Add Employee</a>
+                        </div>  
+                        <br>    
+                        <a href="#menu-toggle" class="btn btn-default" id="me1nu-toggle">Delete Employee</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="men1u-toggle">Edit Employee</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu1-toggle">Search Employee</a>
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                        ${Circle.id}
-                        ${Circle.posts.get(1).content}
-                        <c:choose>
-                            <c:when test="${ not empty customer}">
-                                <li>hi ${customer.firstName}</li>
-                                <li>${customer.city}</li>
-                                
-                                <h1> Your Circles <h1>
-                                 
-                                    <c:forEach var="listVar" items="${circleObjects}">     
-                                        <div class="col-xs-6 col-lg-3">
-                                         
-                                            <!--<center><p>${listVar.id}</p></center>-->
-                                            <center><a href="viewcircle=${listVar.id}.htm"><p>${listVar.name}</p></a></center>
-                                        </div>		
-                                    </c:forEach>			
-                                
-
-                                 
-                                
-                            </c:when>
-                            <c:otherwise>
-                                <c:if test="${not empty cannotLogin}">
-                                    <a href="index.htm" style="color:#003366"><b>${cannotLogin}</b></a>
-                                </c:if>
-                           
-                            </c:otherwise>
-                        </c:choose>
-                        
-                    
                     </div>
                 </div>
             </div>
+            <br>
+            <br><br>
+            
             <hr><jsp:include page="footer.jsp" />
         </div>
         <!-- /#page-content-wrapper -->

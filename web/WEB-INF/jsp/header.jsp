@@ -25,16 +25,16 @@
               </ul>
             </li>
           </ul>
-		  <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <a href="userpage.htm" class="btn btn-success">Sign In</a>
-            <a href="registrationpage.htm" class="btn btn-warning">Sign Up</a>
-          </form>
+
+                <li><form class="navbar-form navbar-right" id="login" method="POST" action="login.htm">
+                    <input type="email" class="form-control input-sm" name="email" placeholder="E-mail">
+                    <input type="password" class="form-control input-sm" name="password"placeholder="Password">
+                    <button type="submit" class="btn btn-success btn-sm">Login</button>
+                    <a href="registrationPage.htm" class="btn btn-warning btn-sm">Register</a>
+                    <a href="employee.htm" class ="btn btn-success btn-sm">Employee</button></a>
+                </form></li>
+               
+                
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -56,7 +56,7 @@
 				<a class="navbar-brand" href="#"></a>
 			</div>
 
-       
+<!--       
         <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MOVIE TIMES + TICKETS<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
                 <li>                   
@@ -98,7 +98,9 @@
             </ul>
         </li>
         
-      </ul>
+      </ul>-->
+
+<h1> Login with alice@blah.com, pw : 100100101</h1>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Enter City + State, ZIP Code, or Movie">
@@ -113,6 +115,5 @@
 </nav>
 <!--/2ND NAV BAR-->
 <!-- AD -->	
-<img src="assets\img\danny.jpg">
 <!-- /AD -->
 </div>
